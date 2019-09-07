@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="./plugins/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css">
+    <link rel="stylesheet" type="text/css" href="./plugins/bootstrap-datepicker/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="./plugins/slick-1.8.1/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./plugins/slick-1.8.1/slick.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>Rosa International</title>
+  </head>
+  <body>
+    <div class="main-wrapper py-4">
+      <header class="header mb-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="header-box panel">
+                <div class="header-left-side"><a class="logo" href=""><img src="img/Logo.png" alt="logo"></a></div>
+                <div class="header-right-side">
+                  <div class="user"><a class="user-link" href="#">
+                      <div class="user-img"><img src="img/user.jpg" alt="user"></div><span class="user-name">Елена Свиридова</span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <section class="page-nav mb-4">
+          <div class="container">
+            <nav class="menu-list">
+              <div class="row">
+                <div class="col-3"><a class="menu-link menu-link-active" href=""><i class="far fa-home"></i><span class="menu-text">Личный кабинет</span></a></div>
+                <div class="col-3"><a class="menu-link" href=""><i class="far fa-sitemap"></i><span class="menu-text">Структура</span></a></div>
+                <div class="col-3"><a class="menu-link" href=""><i class="far fa-coins"></i><span class="menu-text">Финансы</span></a></div>
+                <div class="col-3"><a class="menu-link" href=""><i class="far fa-user-circle"></i><span class="menu-text">Профиль</span></a></div>
+              </div>
+            </nav>
+          </div>
+        </section>
+        <section class="profiles">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-xl-6 mb-4">
+                <div class="panel">
+                  <div class="user-box d-md-flex">
+                    <div class="user-left-side"><a class="user-avatar" href="">
+                        <div class="embed-responsive embed-responsive-1by1"><img src="img/user.jpg" alt="user"></div></a>
+                      <div class="user-info">
+                        <div class="user-info-txt">Дата регистрации</div>
+                        <div class="user-info-date">01.01.2019</div>
+                      </div>
+                    </div>
+                    <div class="user-right-side">
+                      <h3 class="text-center text-md-left mb-2">Елена Свиридова</h3>
+                      <div class="text-secondary text-center text-md-left mb-4">sviridova-elena109</div>
+                      <p class="lead">Реферальная ссылка</p>
+                      <div class="referal-link mb-3">
+                        <input type="text" value="https://drive.google.com/file"><a id="linkReferalButton" href="#"><i class="fal fa-clone"></i></a>
+                      </div>
+                      <div class="social d-flex flex-column flex-md-row justify-content-md-between align-items-md-center mb-2 mb-md-4">
+                        <p class="social-text pr-md-1 mb-2 mb-md-0">Поделиться реф. ссылкой</p>
+                        <ul class="social-list d-flex">
+                          <li><a class="social-link" href=""><i class="fab fa-vk" style="color: #4a76a8"></i></a></li>
+                          <li><a class="social-link" href=""><i class="fab fa-facebook-f" style="color: #4156a7"></i></a></li>
+                          <li><a class="social-link" href=""><i class="fab fa-twitter" style="color: #1da1f3"></i></a></li>
+                        </ul>
+                      </div>
+                      <div class="inviter d-flex flex-column flex-md-row justify-content-md-between align-items-start align-items-md-center mb-2">
+                        <p class="pr-md-1 mb-2 mb-md-0">Пригласитель:</p><a class="link-underline-primary txt-semi" href="">Виктор Федорович</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xl-6 mb-4">
+                <div class="panel">
+                  <div class="slide-box js-bonus">
+                    <div class="slide-el">
+                      <div class="controls d-flex flex-column flex-md-row justify-content-md-between align-items-start align-items-md-center mb-3">
+                        <h4 class="mb-md-0">Реферальный бонус</h4><a class="link-underline-primary txt-semi fz14" href="">Посмотреть дерево</a>
+                      </div>
+                      <div class="table-responsive table-responsive-md mb-0">
+                        <table class="table table-costom table-no-border border-bottom">
+                          <thead class="text-center">
+                            <tr class="table-info">
+                              <th scope="col">1 ур.</th>
+                              <th scope="col">2 ур.</th>
+                              <th scope="col">3 ур.</th>
+                              <th scope="col">4 ур.</th>
+                              <th scope="col">5 ур.</th>
+                              <th scope="col">6 ур.</th>
+                              <th scope="col">7 ур.</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-center">
+                            <tr>
+                              <th>50 чел.</th>
+                              <td>200 чел.</td>
+                              <td>17 чел.</td>
+                              <td>123 чел.</td>
+                              <td>50 чел.</td>
+                              <td>4 чел.</td>
+                              <td>10 чел.</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="inf-box border-bottom mb-3 d-md-flex justify-content-md-between align-items-md-center">
+                        <div class="inf-box-txt mr-lg-3">
+                          <div class="inf-line d-flex justify-content-between">
+                            <p class="fs-14 pr-3">Приглашено всего пользов.</p><span class="txt-bold">117</span>
+                          </div>
+                          <div class="inf-line d-flex justify-content-between">
+                            <p class="fs-14 pr-3">Занято уровней</p><span class="txt-bold">20</span>
+                          </div>
+                        </div>
+                        <div class="inf-box-but text-center mb-3"><a class="btn btn-outline-primary" href="">Получать бонусы с 3-го уровня</a></div>
+                      </div>
+                      <div class="inf-line d-flex justify-content-between">
+                        <p class="pr-3">Заработано за последний месяц ($)</p><span class="txt-bold">370</span>
+                      </div>
+                    </div>
+                    <div class="slide-el">
+                      <div class="controls d-flex flex-column flex-md-row justify-content-md-between align-items-start align-items-md-center mb-3">
+                        <h4 class="mb-md-0">Бинарный бонус</h4><a class="link-underline-primary txt-semi fz14" href="">Посмотреть дерево</a>
+                      </div>
+                      <p>Товарооборот и пользователи</p>
+                      <div class="table-responcive table-responsive-md mb-3">
+                        <table class="table table-no-border border-bottom table-lg">
+                          <thead class="text-center">
+                            <tr class="table-info">
+                              <th scope="col">В правой ветке</th>
+                              <th scope="col">В левой ветке</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-center">
+                            <tr>
+                              <th>1 200 $ / 7чел.</th>
+                              <td>650 $ / 3чел.</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="inf-line d-flex justify-content-between py-3">
+                        <p class="pr-3 mb-0">Заработано за последний месяц ($)</p><span class="txt-bold">250</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xl-6 mb-4">
+                <div class="panel profile-panel-left js-set-height-1">
+                  <div class="packages mb-3">
+                    <div class="row no-gutters border-bottom">
+                      <div class="col-12 col-md-6 mb-4 py-1">
+                        <h4 class="mb-4">Мой пакет</h4>
+                        <div class="packages-plans d-flex align-items-end">
+                          <div class="packages-plans-img mr-2"><img src="img/Rook.png" alt="plans"></div>
+                          <h3 class="mb-0">Rook</h3>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 mb-4 py-1">
+                        <h4 class="mb-4">Выплачено</h4>
+                        <div class="progres-labels d-flex justify-content-between">
+                          <div class="progres-labels-low txt-bold text-secondary">200</div>
+                          <div class="progres-labels-max txt-bold">600</div>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <table class="table table-no-border">
+                    <tbody>
+                      <tr>
+                        <td class="pl-0" style="width:75%">Ежедневный доход ($)  </td>
+                        <td class="h4 pr-0 text-right txt-bold">13</td>
+                      </tr>
+                      <tr>
+                        <td class="pl-0" style="width:75%">Заработано ($)</td>
+                        <td class="h4 pr-0 text-right txt-bold">1950</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-12 col-xl-6 mb-4">
+                <div class="panel profile-panel-right js-set-height-1">
+                  <div class="upgrade">
+                    <h4 class="mb-3">Апгрейд пакета до</h4>
+                    <ul class="upgrade-list d-flex">
+                      <li><a class="btn-upgrade btn-upgrade-bishop" href="">
+                          <div class="btn-upgrade-img">
+                            <svg class="package-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 476 476" style="enable-background:new 0 0 476 476;" xml:space="preserve">
+                              <g>
+                                <path class="st0" d="M146.6,472c-2.2,0-4-1.8-4-4v-23.3c-6.4-2.3-10.8-8.4-10.8-15.4v-13.9c0-8.4,7-15.6,15.5-16.3c-3.9-8.7-7.3-23.5,4.7-38.2c12.1-14.8,36.3-56.3,37-93.2h-1.5c-9.2,0-16.9-7.5-16.9-16.4v-1.5c0-8.9,7.7-16.4,16.9-16.4h2.5                                                                c-20.1-15-32.1-38.8-32.1-64.4c0-15.5,10.1-48.5,57.7-117.8c-4-5.1-6.2-11.4-6.2-17.9c0-16.1,13.1-29.1,29.1-29.1                                                                c7.8,0,15.1,3,20.6,8.5c5.5,5.5,8.5,12.8,8.5,20.6c0,6.6-2.2,12.8-6.2,17.9c6.4,9.3,12.4,18.5,18,27.3c1,1.6,0.8,3.6-0.6,5                                                                l-33.6,33.6c-1.6,1.6-2.4,3.7-2.4,5.9c0,2.2,0.9,4.4,2.4,5.9l1.4,1.5c1.6,1.6,3.7,2.4,5.9,2.4s4.3-0.9,5.9-2.4l28.7-28.8                                                                c0.8-0.8,1.8-1.2,2.8-1.2c0.2,0,0.4,0,0.5,0c1.2,0.2,2.3,0.9,2.9,2c16.6,29.4,25,51.8,25,66.6c0,26-11.5,49.1-31.8,63.9v0.6h2.7                                                                c8.9,0,15.9,7.2,15.9,16.4v1.5c0,9.2-7,16.4-15.9,16.4h-1.5c0.7,36.9,24.9,78.4,37,93.2c12,14.7,8.6,29.5,4.7,38.2                                                                c8.2,0.7,14.4,7.6,14.4,16.3v13.9c0,7-4.5,13.1-10.8,15.4V468c0,2.2-1.8,4-4,4H146.6z"></path>
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="btn-upgrade-txt">Bishop</div></a></li>
+                      <li><a class="btn-upgrade btn-upgrade-rook" href="">
+                          <div class="btn-upgrade-img">
+                            <svg class="package-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 486 486" style="enable-background:new 0 0 486 486;" xml:space="preserve">
+                              <path class="st0" d="M101,482.1c-6.6,0-12-5.4-12-12v-51.2c0-6.6,5.4-12,12-12h2.5v-17.4c0-6.6,5.4-12,12-12h12c25.4-16.3,44-49.9,55.2-99.8c8.9-39.6,10.3-78,10.5-93.6h-3.4c-6.6,0-12-5.4-12-12V155h-4c-6.6,0-12-5.4-12-12v-17.2l-1.2,0  c-5.6,0-10.5-3.9-11.7-9.4l-21.7-97.7c-0.2-0.9-0.3-1.9-0.3-2.9c0.2-6.5,5.5-11.7,12-11.7l0.3,0l44.5,0c5.6,0,10.5,3.9,11.7,9.4  l6.7,28.9h7.9V15.9c0-6.6,5.4-12,12-12h42.2c6.6,0,12,5.4,12,12v26.2h7.6l6.7-28.9c1.2-5.5,6.1-9.3,11.7-9.3l0.3,0l44.7,0  c0.9,0,1.8,0.1,2.6,0.3c6.5,1.5,10.5,7.9,9.1,14.3l-21.3,97.7c-1.2,5.5-6.1,9.4-11.7,9.4l-1.2,0v17.2c0,6.6-5.4,12-12,12h-4V172  c0,6.6-5.4,12-12,12h-3.4c0.3,17.8,2,55.4,10.6,93.6c11.2,49.9,29.7,83.4,55.1,99.7h11.5c6.6,0,12,5.4,12,12v17.5h2.5  c6.6,0,12,5.4,12,12v51.2c0,6.6-5.4,12-12,12H101z"></path>
+                            </svg>
+                          </div>
+                          <div class="btn-upgrade-txt">Rook</div></a></li>
+                      <li><a class="btn-upgrade btn-upgrade-queen" href="">
+                          <div class="btn-upgrade-img">
+                            <svg class="package-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 499.1 499.1" style="enable-background:new 0 0 499.1 499.1;" xml:space="preserve">
+                              <path class="st0" d="M125.7,495.1c-6.6,0-12-5.4-12-12v-41.6c0-6.6,5.4-12,12-12h4v-16.8c0-6.6,5.4-12,12-12h15.1  c16.7-8.1,28.6-33.7,34.5-74.2c5.7-39,4.1-79.6,3.2-95.7H193c-6.6,0-12-5.4-12-12v-17h-3.4c-6.6,0-12-5.4-12-12v-29  c0-6.6,5.4-12,12-12h18.4c-3.2-22.7-14.2-51.3-31.3-81.2c-0.4-0.8-0.7-1.3-1-1.7c-2-3.5-2.2-7.7-0.4-11.3c2-4.1,6.2-6.7,10.8-6.7  c1.8,0,3.6,0.4,5.3,1.2L213.2,67l8.1-10.9c-3.5-5.4-5.4-11.8-5.4-18.3C216,19.1,231.1,4,249.8,4s33.8,15.1,33.8,33.8  c0,6.5-1.9,12.9-5.4,18.3l8.1,10.9c0,0,33.6-17.6,33.6-17.7c1.6-0.8,3.5-1.2,5.3-1.2c2.2,0,4.3,0.6,6.2,1.7  c2.8,1.6,4.7,4.3,5.5,7.4c0.8,3.1,0.3,6.2-1.3,9c-0.1,0.2-0.3,0.5-0.6,1.1c-8.2,14.1-27.1,49.3-31.7,81.8h18.4c6.6,0,12,5.4,12,12  v28.9c0,6.6-5.4,12-12,12h-3.4v17c0,6.6-5.4,12-12,12h-1.5c-1,16.1-2.5,56.7,3.1,95.8c5.9,40.5,17.7,66.1,34.3,74.2h15.1  c6.6,0,12,5.4,12,12v16.8h4c6.6,0,12,5.4,12,12v41.6c0,6.6-5.4,12-12,12H125.7z"></path>
+                            </svg>
+                          </div>
+                          <div class="btn-upgrade-txt">Queen</div></a></li>
+                      <li><a class="btn-upgrade btn-upgrade-king" href="">
+                          <div class="btn-upgrade-img">
+                            <svg class="package-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve">
+                              <path class="st0" d="M167.5,492c-2.2,0-4-1.8-4-4v-25.1c-5.1-2.7-9.7-8.2-9.7-15.1v-14.5c0-8,6.1-15,14-16.5  c-3.5-8.8-6.9-24.4,3.8-39.9c10.7-15.5,32.2-58.9,32.7-97.6c-8.4-1.1-15.1-8.3-15.1-16.7v-1.6c0-5.2,2.3-9.8,6-12.9  c-3.7-3.1-6-7.7-6-12.9v-1.6c0-9.2,8-16.9,17.4-16.9h3.5c0.9-21.2-1.7-41.5-7.7-60.4c-1.3-3.9-2.8-7.5-4.5-10.6h-2.6  c-9.4,0-17.4-7.7-17.4-16.9v-1.6c0-8.5,6.8-15.7,15.4-16.8c4.3-19.3,19-35.5,37.8-41.6V55.5h-15.3c-2.2,0-4-1.8-4-4V27.3  c0-2.2,1.8-4,4-4h15.3V8c0-2.2,1.8-4,4-4h24.2c2.2,0,4,1.8,4,4v15.3h15.3c2.2,0,4,1.8,4,4v24.2c0,2.2-1.8,4-4,4h-15.3v12.8  c20,5.6,35.6,22.1,40,42.5c7.6,1.7,13.1,8.4,13.1,16.5v1.6c0,9.5-7.2,16.9-16.3,16.9h-1c-1.7,3.1-3.2,6.6-4.5,10.6  c-6.1,18.9-8.7,39.1-7.7,60.4h1.9c9.2,0,16.3,7.4,16.3,16.9v1.6c0,5.2-2.3,9.8-6,12.9c3.7,3.1,6,7.7,6,12.9v1.6  c0,8.1-5.3,14.6-12.6,16.4c0.4,38.5,22.2,82.3,33,97.9c10.7,15.5,7.3,31.1,3.8,39.9c7.4,1.6,12.9,8.3,12.9,16.5v14.5  c0,7.2-3.6,12.8-9.7,15.4V488c0,2.2-1.8,4-4,4H167.5z"></path>
+                            </svg>
+                          </div>
+                          <div class="btn-upgrade-txt">King</div></a></li>
+                    </ul>
+                  </div>
+                  <div class="upgrade-form border-bottom mb-3">
+                    <label for="upgrade">Сумма к оплате</label>
+                    <div class="form-row">
+                      <div class="col-md-8 mb-3">
+                        <div class="input-group">
+                          <input class="form-control" id="upgrade" type="text" value="15 000">
+                          <div class="input-group-append"><span class="input-group-text"><i class="fas fa-dollar-sign"></i></span></div>
+                        </div>
+                      </div>
+                      <div class="col-auto mx-auto mb-3 mr-md-0">
+                        <button class="btn btn-lg btn-primary" type="submit"><i class="far fa-long-arrow-up mr-1"></i><span>Апгрейд</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <table class="table table-no-border">
+                    <tbody>
+                      <tr>
+                        <td class="pl-0" style="width:75%">Период действия пакета после апгрейда</td>
+                        <td class="pr-0 text-right txt-bold">450 дней</td>
+                      </tr>
+                      <tr>
+                        <td class="pl-0" style="width:75%">Ежедневный доход ($) </td>
+                        <td class="pr-0 text-right txt-bold">31</td>
+                      </tr>
+                      <tr>
+                        <td class="pl-0" style="width:75%">Итого будет выплачено ($)</td>
+                        <td class="pr-0 text-right txt-bold">24 800 дней</td>
+                      </tr>
+                      <tr>
+                        <td class="pl-0" style="width:75%">Возврат тела инвестиции</td>
+                        <td class="pr-0 text-right txt-bold">10,5 мес </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-12 mb-4">
+                <div class="panel">
+                  <div class="row justify-content-lg-center">
+                    <div class="col-lg-10 col-xl-6 mb-4 mb-xxl-0 pr-xxl-5">
+                      <h4 class="mb-4">Мои финансы</h4>
+                      <table class="table table-no-border mb-3">
+                        <tbody>
+                          <tr class="border-bottom">
+                            <td class="pl-0 py-3" style="width:75%">Всего получено бонусов ($)</td>
+                            <td class="pr-0 py-3 text-right txt-bold">3 050</td>
+                          </tr>
+                          <tr>
+                            <td class="pl-0" style="width:75%">Бинарный бонус ($)</td>
+                            <td class="pr-0 text-right txt-bold">500</td>
+                          </tr>
+                          <tr>
+                            <td class="pl-0" style="width:75%">Реферальный бонус ($)</td>
+                            <td class="pr-0 text-right txt-bold">590</td>
+                          </tr>
+                          <tr>
+                            <td class="pl-0" style="width:75%">Инвестиционный бонус ($)</td>
+                            <td class="pr-0 text-right txt-bold">1 960</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <form>
+                        <label for="upgrade">На балансе</label>
+                        <div class="form-row justify-content-center justify-content-xl-start">
+                          <div class="col-12 col-xl-auto mb-3">
+                            <div class="input-group">
+                              <input class="form-control" id="upgrade" type="text" value="15 000">
+                              <div class="input-group-append"><span class="input-group-text"><i class="fas fa-dollar-sign"></i></span></div>
+                            </div>
+                          </div>
+                          <div class="col-auto mb-3 mr-md-0">
+                            <button class="btn btn-lg btn-primary" type="submit"><span>Вывести</span></button>
+                          </div>
+                          <div class="col-auto mb-3 mr-md-0">
+                            <button class="btn btn-lg btn-outline-primary" type="submit"> Финансовые операции</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-lg-10 col-xl-6 mb-4 mb-xxl-0">
+                      <div class="d-flex justify-content-between flex-wrap">
+                        <h4>График полученных бонусов</h4>
+                        <div class="calendar-box"><a class="js-toggle-calendar btn btn-lg btn-primary" href=""><i class="far fa-calendar-alt fa-lg mr-1"></i><i class="fas fa-sort-down" style="vertical-align: top;"></i></a>
+                          <input class="js-calendar form-control" type="text" style="visability: hidden">
+                        </div>
+                      </div>
+                      <div class="char">
+                        <div class="chart-container">
+                          <div class="chart-item" id="dinamicColumnChart" style="width:100%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="row justify-content-md-between">
+            <div class="col-12 col-md-auto text-center">
+              <p class="mb-0">© 2019 ROSA International</p>
+            </div>
+            <div class="col-12 col-md-auto text-center">
+              <p class="mb-0">Разработано - <a class="link-secondary" href="#">Flawlessmlm</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="plugins/slick-1.8.1/slick.min.js"></script>
+    <script src="plugins/echarts/echarts.min.js"></script>
+    <script src="plugins/select2/select2.min.js"></script>
+    <script>
+      $(function(){
+          var datepicker_shown = false;
+          $('.js-toggle-calendar').on('click', function(e){
+              if(datepicker_shown) {
+                  $('.js-calendar').datepicker({ orientation: 'bottom right'});
+                  $('.js-calendar').datepicker('show');
+              } else {
+                  $('.js-calendar').datepicker({ orientation: 'bottom right'});
+                  $('.js-calendar').datepicker('hide');
+              }
+              datepicker_shown = !datepicker_shown;
+              return false;
+          });
+      })
+    </script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

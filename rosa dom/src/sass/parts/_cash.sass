@@ -1,0 +1,38 @@
+.cash 
+    display: flex 
+    flex-direction: column 
+    align-items: stretch
+    background: white url('../img/symbol.jpg') center right no-repeat/contain
+.cash-balance 
+    -webkit-box-flex: 1 
+    -ms-flex-positive: 1 
+    flex-grow: 1 
+    padding: 10px 0px
+    padding-top: 26px
+.cash-balance-item
+    flex-direction: column
+    display: flex
+    align-items: center
+    p 
+        display: inline-block 
+        margin-bottom: 0px 
+    span 
+        font-weight: bold 
+        font-size: 36px 
+.cash-heading 
+    border-bottom: 1px solid lightgray
+    display: flex 
+    justify-content: space-between
+    padding-bottom: 10px
+.cash-heading-box 
+    h2
+        margin-right: 10px
+        font-size: 26px 
+.cash-heading-box-icon 
+    & > i 
+        color: #f74364
+        font-size: 50px 
+@media(min-width: 576px)
+    .cash-balance-item
+        flex-flow: wrap
+        justify-content: space-between

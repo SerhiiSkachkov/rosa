@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="./plugins/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css">
+    <link rel="stylesheet" type="text/css" href="./plugins/bootstrap-datepicker/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="./plugins/slick-1.8.1/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./plugins/slick-1.8.1/slick.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>Rosa International</title>
+  </head>
+  <body>
+    <div class="main-wrapper py-4">
+      <header class="header mb-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="header-box panel">
+                <div class="header-left-side"><a class="logo" href=""><img src="img/Logo.png" alt="logo"></a></div>
+                <div class="header-right-side">
+                  <div class="user"><a class="user-link" href="#">
+                      <div class="user-img"><img src="img/user.jpg" alt="user"></div><span class="user-name">Елена Свиридова</span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <section class="page-nav mb-4">
+          <div class="container">
+            <nav class="menu-list">
+              <div class="row">
+                <div class="col-3"><a class="menu-link" href=""><i class="far fa-home"></i><span class="menu-text">Личный кабинет</span></a></div>
+                <div class="col-3"><a class="menu-link" href=""><i class="far fa-sitemap"></i><span class="menu-text">Структура</span></a></div>
+                <div class="col-3"><a class="menu-link" href=""><i class="far fa-coins"></i><span class="menu-text">Финансы</span></a></div>
+                <div class="col-3"><a class="menu-link menu-link-active" href=""><i class="far fa-user-circle"></i><span class="menu-text">Профиль</span></a></div>
+              </div>
+            </nav>
+          </div>
+        </section>
+        <section class="profiles">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-xl-4">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-xl-12 mb-4">
+                    <div class="panel panel-block panel-bordered">
+                      <div class="panel-body text-center"><a class="user-avatar" href="">
+                          <div class="embed-responsive embed-responsive-1by1"><img src="img/user.jpg" alt="user"></div></a>
+                        <div class="user-info">
+                          <h3 class="text-center mb-2">Елена Свиридова</h3>
+                          <div class="text-secondary text-center mb-4">sviridova-elena109</div>
+                          <div class="row justify-content-center">
+                            <div class="col-auto mt5 mb5">
+                              <button class="btn btn-default btn-lg btn-primary" type="button">Изменить</button>
+                            </div>
+                            <div class="col-auto mt5 mb5">
+                              <button class="btn btn-default btn-lg btn-outline-primary" type="button">Удалить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel-footer">
+                        <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-start align-items-md-center mb-2">
+                          <p class="pr-md-1 mb-2 mb-md-0">Дата регистрации:   </p>
+                          <p class="txt-semi mb-2 mb-md-0" href="">01.01.2019</p>
+                        </div>
+                        <div class="inviter d-flex flex-column flex-md-row justify-content-md-between align-items-start align-items-md-center mb-2">
+                          <p class="pr-md-1 mb-2 mb-md-0">Пригласитель:</p><a class="link-underline-primary txt-semi" href="">Виктор Федорович</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-xl-12 mb-4">
+                    <div class="panel">
+                      <h5 class="mb-4">
+                        <p>Статус верефикации<i class="text-secondary far fa-question-circle ml-2" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i></p>
+                      </h5>
+                      <div class="row mb-2">
+                        <div class="col-12 col-ma-auto flex-grow-1 col-xxl">
+                          <div class="text-field text-field-primary text-field-secondary-dash mb-3">Верифицирован</div>
+                        </div>
+                        <div class="col-12 col-ma-auto flex-grow-1 col-xxl">
+                          <div class="btn-group"><a href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Как пройти верификацию?</a>
+                            <div class="dropdown-menu drop-costom dropdown-menu-left">
+                              <ul class="fz14">
+                                <li>1. В форме ниже загрузите фото документо (паспорт или водительские права). 
+                                  <div>Допустимые форматы: .jpg, .jpeg, .gif</div>
+                                </li>
+                                <li>2. Загрузите селфи, где Вы держите документ.</li>
+                                <li>3. Нажмите «сохранить».</li>
+                                <li>4. Ваш запрос может обрабатываться до 3-х рабочих дней.</li>
+                                <li>5. При успешном прохождении верификации статус в профиле измениться на «Верифицирован».</li>
+                                <li>6. При отклонени запроса Вы получите на почту письмо с указанием причины.</li>
+                                <li>
+                                  <div class="alert alert-danger mb-0 px-2" role="alert">
+                                    <div class="d-flex"><span class="mr-1"><i class="fas fa-exclamation-triangle"></i></span><span><span class="text-weight-bold">Обратите внимание! </span>После прохождения верификации Вы не сможете изменить фамилию, имя и дату рождения.</span></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Фото документов и селфи с документом для верификации</p>
+                      <div class="veref-doc-list d-flex mb-4"><a class="veref-doc-item" href=""></a><a class="veref-doc-item" href=""></a><a class="veref-doc-item" href=""></a></div>
+                      <div class="text-center">
+                        <button class="btn btn-lg btn-primary" type="submit" data-toggle="modal" data-target="#exampleModalCenter"><i class="far fa-file-upload mr-2"></i><span>Загрузить фото</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xl-8 mb-4">
+                <div class="panel">
+                  <div class="row mb-4">
+                    <div class="col-12 col-md-6 mb-2">
+                      <label for="exampleLogin">Логин *</label>
+                      <div class="input-group mb-3">
+                        <input class="form-control" id="exampleLogin" type="text">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-2">
+                      <label for="examplePassword">Пароль *</label>
+                      <div class="input-group mb-3">
+                        <input class="form-control form-control-right" id="password" type="password" placeholder="Password">
+                        <div class="input-group-append">
+                          <button class="btn btn-primary js-show-password" href="#password"><i class="fa fa-eye-slash"></i></button>
+                          <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalPassword"><i class="fa fa-pen"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-2">
+                      <label for="exampleEmail">E-mail</label>
+                      <div class="input-group mb-3">
+                        <input class="form-control" id="exampleEmail" type="email">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-2">
+                      <label for="examplePhone">Номер телефона</label>
+                      <div class="input-group mb-3">
+                        <input class="form-control" id="examplePhone" type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col-12 col-md-6 mb-3">
+                      <label for="exampleSurname">Фамилия *</label>
+                      <div class="input-group mb-3">
+                        <input class="form-control" id="exampleSurname" type="text">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                      <label for="exampleName">Имя *</label>
+                      <div class="input-group mb-3">
+                        <input class="form-control" id="exampleName" type="text">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                      <label for="exampleDate">Дата рождения</label>
+                      <div class="input-group mb-4">
+                        <input class="js-calendar form-control date" type="text">
+                        <div class="input-group-append">
+                          <button class="js-toggle-calendar btn btn-secondary" type="button"> <i class="far fa-calendar-alt"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col-12 col-md-6 mb-3">
+                      <label for="exampleSurname">Telegram</label>
+                      <div class="input-group mb-3">
+                        <input class="form-control" id="exampleTelegram" type="text">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                      <label for="exampleFacebook">Профиль Facebook</label>
+                      <div class="input-group mb-3">
+                        <input class="form-control" id="exampleFacebook" type="text">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                      <label for="exampleVKontacte">Профиль VKontacte</label>
+                      <div class="input-group mb-4">
+                        <input class="form-control" id="exampleVKontacte" type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 mb-4">
+                      <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" id="customCheck1" type="checkbox" checked="">
+                        <label class="custom-control-label txt-rg" for="customCheck1">Включить двухфакторную аутентификацию для финансовых операций</label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-lg btn-primary" type="submit"><span>Сохранить</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-mid modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-content">
+                <div class="modal-close">
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"> <i class="fal fa-times"></i></span></button>
+                </div>
+                <div class="modal-body pb-0">
+                  <div class="row">
+                    <div class="col-12 mb-2">
+                      <div class="d-flex align-items-center"><i class="far fa-id-card-alt h1 text-secondary mr-2"></i>
+                        <h3 class="mb-0">Изменение фотографии</h3>
+                      </div>
+                    </div>
+                    <div class="col-12 mb-2">
+                      <p>Выбраная область будет отображаться как фотография Вашего профиля</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer justify-content-start">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Загрузить новое</button>
+                  <button class="btn btn-primary" type="button">Сохранить</button>
+                  <button class="btn btn-outline-primary" type="button">Отменить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModalPassword" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-mid modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-content">
+                <div class="modal-close">
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"> <i class="fal fa-times"></i></span></button>
+                </div>
+                <div class="modal-body pb-0">
+                  <div class="row">
+                    <div class="col-12 mb-2">
+                      <div class="d-flex align-items-center"><i class="far fa-key h1 text-secondary mr-2"></i>
+                        <h3 class="mb-0">Изменение пароля</h3>
+                      </div>
+                    </div>
+                    <div class="col-12 mb-2">
+                      <p>Поля отмеченные * обязательны к заполнению</p>
+                    </div>
+                    <div class="col-12">
+                      <label>Введите Ваш текущий пароль *</label>
+                      <div class="input-group mb-4">
+                        <input class="form-control form-control-right" id="password" type="password" placeholder="Password">
+                        <div class="input-group-append">
+                          <button class="btn btn-primary js-show-password" href="#password"><i class="fa fa-eye-slash"></i></button>
+                          <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalPassword"><i class="fa fa-pen"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <label>Введите Ваш текущий пароль *</label>
+                      <div class="input-group mb-4">
+                        <input class="form-control form-control-right" id="password" type="password" placeholder="Password">
+                        <div class="input-group-append">
+                          <button class="btn btn-primary js-show-password" href="#password"><i class="fa fa-eye-slash"></i></button>
+                          <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalPassword"><i class="fa fa-pen"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <label>Введите Ваш текущий пароль *</label>
+                      <div class="input-group mb-4">
+                        <input class="form-control form-control-right" id="password" type="password" placeholder="Password">
+                        <div class="input-group-append">
+                          <button class="btn btn-primary js-show-password" href="#password"><i class="fa fa-eye-slash"></i></button>
+                          <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalPassword"><i class="fa fa-pen"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer pt-0 justify-content-start">
+                  <button class="btn btn-lg btn-primary" type="button">Изменить</button>
+                  <button class="btn btn-lg btn-outline-primary" type="button">Отменить           </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="row justify-content-md-between">
+            <div class="col-12 col-md-auto text-center">
+              <p class="mb-0">© 2019 ROSA International</p>
+            </div>
+            <div class="col-12 col-md-auto text-center">
+              <p class="mb-0">Разработано - <a class="link-secondary" href="#">Flawlessmlm</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="plugins/slick-1.8.1/slick.min.js"></script>
+    <script src="plugins/echarts/echarts.min.js"></script>
+    <script src="plugins/select2/select2.min.js"></script>
+    <script>
+      $(function(){
+          var datepicker_shown = false;
+          $('.js-toggle-calendar').on('click', function(e){
+              if(datepicker_shown) {
+                  $('.js-calendar').datepicker( "hide" );
+              } else {
+                  $('.js-calendar').datepicker( "show" );
+              }
+              datepicker_shown = !datepicker_shown;
+              return false;
+          });
+      })
+    </script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

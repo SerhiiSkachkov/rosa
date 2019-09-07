@@ -1,0 +1,274 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="/img/favicon.png" type="image/png")
+        link(rel="stylesheet" type="text/css" href="./plugins/bootstrap/bootstrap.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel="stylesheet" type="text/css" href="./plugins/bootstrap-datepicker/bootstrap-datepicker.min.css")
+        link(rel="stylesheet" type="text/css" href="./plugins/slick-1.8.1/slick-theme.css")
+        link(rel="stylesheet" type="text/css" href="./plugins/slick-1.8.1/slick.css")
+        link(rel="stylesheet" type="text/css" href="./plugins/select2/select2.min.css")
+        link(rel="stylesheet" type="text/css" href="./plugins/jq-ui/jquery-ui.min.css")
+        link(rel='stylesheet' href='css/styles.min.css')
+        title Rosa International
+    body
+        .main-wrapper.py-4
+            include components/header.pug
+            main.content
+                section.page-nav.mb-4
+                    .container
+                        nav.menu-list
+                            .row
+                                .col-3
+                                  a.menu-link(href='')
+                                    i.far.fa-home
+                                    span.menu-text Личный кабинет
+                                .col-3
+                                  a.menu-link.menu-link-active(href='')
+                                    i.far.fa-sitemap
+                                    span.menu-text Структура
+                                .col-3
+                                  a.menu-link(href='')
+                                    i.far.fa-coins
+                                    span.menu-text Финансы
+                                .col-3
+                                  a.menu-link(href='')
+                                    i.far.fa-user-circle
+                                    span.menu-text Профиль
+                section.graph
+                    .container
+                        .row
+                            .col-12.col-lg-4.col-xxl-3.mb-4
+                              .panel.panel-block.panel-bordered
+                                .panel-body
+                                  .row
+                                    .col-12.mb-3
+                                      h5.text-center В Вашей структуре установлено 
+                                        span.badge.badge-primary.mr-2 118
+                                        | пользователей
+                                    .col-12.fz14
+                                      .row
+                                          .col-auto.flex-grow-1
+                                            div.d-flex.justify-content-center
+                                              span Левая нога: 
+                                              span.text-weight-bold.px-1 50
+                                          .col-auto.flex-grow-1
+                                            div.d-flex.justify-content-center
+                                              span Левая нога: 
+                                              span.text-weight-bold.px-1 68
+                                .panel-body
+                                  .graph-el-wrap
+                                    .graph-el
+                                      .graph-el-box
+                                        .graph-img
+                                          img(src="img/Bishop-up.svg", alt="Bish")
+                                        .graph-name Bishop
+                                      .graph-price 1 000 $
+                                    .graph-el
+                                      .graph-el-box
+                                        .graph-img
+                                          img(src="img/Rook-up.svg", alt="Rook")
+                                        .graph-name Rook
+                                      .graph-price 3 000 $                                      
+                                    .graph-el
+                                      .graph-el-box
+                                        .graph-img
+                                          img(src="img/Queen-up.svg", alt="Qeen")
+                                        .graph-name Queen
+                                      .graph-price 7 000 $
+                                    .graph-el
+                                      .graph-el-box
+                                        .graph-img
+                                          img(src="img/King-up.svg", alt="King")
+                                        .graph-name King
+                                      .graph-price 15 000 $
+                                .panel-body
+                                    h5.text-center.mb-4 Настройка распределения новыйх пользователей
+                                    .form-group.mb-0.fz14
+                                      .custom-control.custom-radio.mb-3
+                                        input#customRadio.custom-control-input(type='radio', name='example', value='customEx')
+                                        label.custom-control-label(for='customRadio') Левая нога
+                                      .custom-control.custom-radio.mb-3
+                                        input#customRadio2.custom-control-input(type='radio', name='example', value='customEx')
+                                        label.custom-control-label(for='customRadio2') Правая нога
+                                      .custom-control.custom-radio.mb-0
+                                        input#customRadio3.custom-control-input(type='radio', name='example', value='customEx')
+                                        label.custom-control-label(for='customRadio3') Автоматически
+                                .panel-body
+                                    .form-group
+                                      label(for='exampleDate') Глубина
+                                      .input-group.mb-3
+                                          select.select-costom.js-select
+                                            option  1 уровня
+                                            option  2 уровня
+                                            option  3 уровня
+                                    .form-group
+                                      label(for='exampleDate') Тип
+                                      .input-group.mb-3
+                                          select.select-costom.js-select
+                                            option  Тип 1   
+                                            option  Тип 2
+                                            option  Тип 3 
+                                    .form-group
+                                      label(for='exampleLogin') Логин пользователя
+                                      .input-group.mb-3
+                                          input#exampleLogin.form-control(type='text')
+                                    .form-group.mb-0
+                                      a.btn.btn-lg.btn-primary(href="")
+                                        span Применить
+                                .panel-body
+                                    .form-group
+                                      label(for='exampleLogin') Переместить пользователя
+                                      .input-group.mb-3
+                                          input#exampleLogin.form-control(type='text' placeholder="Логин или номер ячейки")
+                                    .form-group
+                                      label(for='exampleLogin') Логин нового пригласителя
+                                      .input-group.mb-3
+                                          input#exampleLogin.form-control(type='text' placeholder="Логин или номер ячейки")
+                                    .form-group
+                                      label(for='exampleLogin') Ячейка для перемещения
+                                      .input-group.mb-3
+                                          input#exampleLogin.form-control(type='text' placeholder="Номер свободной ячейки")
+                                    .form-group.mb-0
+                                      a.btn.btn-lg.btn-primary(href="")
+                                        span Переместить
+                                .panel-body.fz14
+                                    .row
+                                      .col-12.flex-grow-1.mb-2
+                                        div.d-flex
+                                          span.mr-3 Логин:   
+                                          span.text-weight-bold vikafiko11244l 
+                                      .col-12.flex-grow-1.mb-2
+                                        div.d-flex
+                                          span.mr-3 Регистрация:   
+                                          span.text-weight-bold 12.03.2019
+                                      .col-12.flex-grow-1.mb-2
+                                        div.d-flex
+                                          span.mr-3 Спонсор:     
+                                          span.text-weight-bold user22242424
+                                      .col-12.flex-grow-1.mb-2
+                                        div.d-flex
+                                          span.mr-3 Пакет:   
+                                          span.text-weight-bold Hook
+                                      .col-12.flex-grow-1.mb-2
+                                        div.d-flex
+                                          span.mr-3 Структура:     
+                                          span.text-weight-bold 36
+                                      .col-12.flex-grow-1.mb-2
+                                        div.d-flex
+                                          span.mr-3 Перекос:    
+                                          span.text-weight-bold Л: 36   |   П: 21
+                                      .col-12.flex-grow-1.mb-2
+                                        div.d-flex
+                                          span Оборот:
+                                    .row.pl-2
+                                      .col-12.flex-grow-1.mb-2
+                                        div.d-flex
+                                          span.mr-3 - общий:    
+                                          span.text-weight-bold 26 456 $ 
+                                      .col-12.flex-grow-1.mb-2
+                                        div.d-flex
+                                          span.mr-3 - левая нога:   
+                                          span.text-weight-bold 6 000 $    
+                                      .col-12.flex-grow-1.mb-2
+                                        div.d-flex
+                                          span.mr-3 - правая нога:     
+                                          span.text-weight-bold 19 400 $   
+                            .col-12.col-lg-8.col-xxl-9.mb-4
+                              .panel
+                                .row.d-flex.justify-content-between.align-items-center
+                                  .col-auto.mb-3
+                                      h4.mb-0 Общий вид структуры
+                                  .col-auto.mb-3
+                                    a.btn.p-0(href="") 
+                                      i.far.fa-expand-alt.mr-1
+                                      span На весь экран
+                                  .col-12.mb-3.text-center.text-md-right
+                                    a.btn.btn-lg.btn-outline-primary(href='' data-toggle="modal" data-target="#exampleModalCenter")
+                                      span Отобразить от пригласителя
+
+            include  components/footer.pug             
+            #exampleModalCenter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+              .modal-dialog.modal-dialog-mid.modal-dialog-centered(role='document')
+                .modal-content
+                  .modal-close
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                      span(aria-hidden='true') 
+                        i.fal.fa-times
+                  .modal-body
+                    div.text-center.mb-4
+                      h3.mb-3 Регистрация участника
+                      p Поля со * обязательны для заполнения 
+                    div.mb-4
+                      h5.mb-3 Основные данные
+                      .input-group.mb-3
+                          input#exampleLogin.form-control(type='text' placeholder="E-mail *")
+                      .input-group.mb-3
+                          input#exampleLogin.form-control(type='text' placeholder="Введите имя участника *")
+                      .input-group.mb-3
+                          input#exampleLogin.form-control(type='text' placeholder="Введите фамилию участника *")
+                    div.mb-4
+                      h5.mb-3 Выбор места
+                      .form-group.fz14
+                        .custom-control.custom-radio.mb-3
+                          input#customRadio.custom-control-input(type='radio', name='example', value='customEx')
+                          label.custom-control-label(for='customRadio') Регистрация в выбраную ячейку
+                        .custom-control.custom-radio.mb-3
+                          input#customRadio2.custom-control-input(type='radio', name='example', value='customEx')
+                          label.custom-control-label(for='customRadio2') Автоматическая регистрация по настройкам
+                    div.mb-4 
+                      .form-group
+                        label(for='exampleDate') Данные пригласителя
+                        .input-group.mb-3
+                            select.select-costom.js-select
+                              option Данные 1
+                              option Данные 2
+                              option Данные 3
+                    div.mb-4 
+                      h5.mb-3 Выбор места
+                      p.mb-3.fz14 Для постановки нового пользователя в структуру выберите и оплатите подходящий пакет
+                      .row.no-gutters
+                        .col-auto.flex-grow-1
+                          a.btn-tok.btn-tok-bish(href="")
+                            .tok-img
+                              img(src="img/Bishop-up.svg", alt="Bish")
+                            .tok-name Bishop
+                        .col-auto.flex-grow-1
+                          a.btn-tok.btn-tok-rook(href="")
+                            .tok-img
+                              img(src="img/Rook-up.svg", alt="Rook")
+                            .tok-name Rook
+                        .col-auto.flex-grow-1
+                          a.btn-tok.btn-tok-queen(href="")
+                            .tok-img
+                              img(src="img/Queen-up.svg", alt="Qeen")
+                            .tok-name Qeen
+                        .col-auto.flex-grow-1
+                          a.btn-tok.btn-tok-king(href="")
+                            .tok-img
+                              img(src="img/King-up.svg", alt="King")
+                            .tok-name King
+                    div.mb-4
+                      .form-group
+                          label(for='exampleDate') Сумма к оплате
+                          .input-group
+                            input#upgrade.form-control(type='text', value='15 000', tabindex='0')
+                            .input-group-append
+                              span.input-group-text 
+                                i.fas.fa-dollar-sign
+                    div.mb-4 
+                      .form-group
+                        label(for='exampleDate') Платежная система
+                        .input-group.mb-3
+                            select.select-costom.js-select
+                              option Платежная система 1
+                              option Платежная система 2
+                              option Платежная система 3
+                  .modal-footer
+                    button.btn.btn-primary.btn-lg.btn-block(type='button') Зарегистрировать и оплатить
+        include components/script.pug

@@ -1,0 +1,267 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="/img/favicon.png" type="image/png")
+        link(rel="stylesheet" type="text/css" href="./plugins/bootstrap/bootstrap.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel="stylesheet" type="text/css" href="./plugins/bootstrap-datepicker/bootstrap-datepicker.min.css")
+        link(rel="stylesheet" type="text/css" href="./plugins/slick-1.8.1/slick-theme.css")
+        link(rel="stylesheet" type="text/css" href="./plugins/slick-1.8.1/slick.css")
+        link(rel='stylesheet' href='css/styles.min.css')
+        title Rosa International
+    body
+        .main-wrapper.py-4
+            include components/header.pug
+            main.content
+                section.page-nav.mb-4
+                    .container
+                        nav.menu-list
+                            .row
+                                .col-3
+                                  a.menu-link(href='')
+                                    i.far.fa-home
+                                    span.menu-text Личный кабинет
+                                .col-3
+                                  a.menu-link(href='')
+                                    i.far.fa-sitemap
+                                    span.menu-text Структура
+                                .col-3
+                                  a.menu-link(href='')
+                                    i.far.fa-coins
+                                    span.menu-text Финансы
+                                .col-3
+                                  a.menu-link.menu-link-active(href='')
+                                    i.far.fa-user-circle
+                                    span.menu-text Профиль
+                section.profiles
+                    .container
+                        .row
+                            .col-12.col-xl-4
+                                .row
+                                    .col-12.col-md-6.col-xl-12.mb-4
+                                        .panel.panel-block.panel-bordered
+                                            .panel-body.text-center
+                                                a.user-avatar(href="")
+                                                        .embed-responsive.embed-responsive-1by1
+                                                            img(src='img/user.jpg', alt="user")
+                                                .user-info
+                                                    h3.text-center.mb-2 Елена Свиридова
+                                                    div.text-secondary.text-center.mb-4 sviridova-elena109
+                                                    .row.justify-content-center
+                                                        .col-auto.mt5.mb5
+                                                          button.btn.btn-default.btn-lg.btn-primary(type='button')
+                                                            | Изменить
+                                                        .col-auto.mt5.mb5
+                                                          button.btn.btn-default.btn-lg.btn-outline-primary(type='button')
+                                                            | Удалить
+                                            .panel-footer
+                                                div.d-flex.flex-column.flex-md-row.justify-content-md-between.align-items-start.align-items-md-center.mb-2
+                                                    p.pr-md-1.mb-2.mb-md-0 Дата регистрации:   
+                                                    p.txt-semi.mb-2.mb-md-0(href="") 01.01.2019
+                                                .inviter.d-flex.flex-column.flex-md-row.justify-content-md-between.align-items-start.align-items-md-center.mb-2
+                                                    p.pr-md-1.mb-2.mb-md-0 Пригласитель:
+                                                    a.link-underline-primary.txt-semi(href="") Виктор Федорович
+                                    .col-12.col-md-6.col-xl-12.mb-4
+                                        .panel
+                                            h5.mb-4
+                                                p Статус верефикации
+                                                    i.text-secondary.far.fa-question-circle.ml-2(data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+                                            .row.mb-2
+                                                .col-12.col-ma-auto.flex-grow-1.col-xxl
+                                                    div.text-field.text-field-primary.text-field-secondary-dash.mb-3 Верифицирован
+                                                .col-12.col-ma-auto.flex-grow-1.col-xxl
+                                                    .btn-group
+                                                        a(href="" data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Как пройти верификацию?
+                                                        .dropdown-menu.drop-costom.dropdown-menu-left
+                                                            ul.fz14
+                                                                li 1. В форме ниже загрузите фото документо (паспорт или водительские права). 
+                                                                    div Допустимые форматы: .jpg, .jpeg, .gif
+
+                                                                li 2. Загрузите селфи, где Вы держите документ.
+
+                                                                li 3. Нажмите «сохранить».
+
+                                                                li 4. Ваш запрос может обрабатываться до 3-х рабочих дней.
+
+                                                                li 5. При успешном прохождении верификации статус в профиле измениться на «Верифицирован».
+
+                                                                li 6. При отклонени запроса Вы получите на почту письмо с указанием причины.
+
+                                                                li
+                                                                    .alert.alert-danger.mb-0.px-2(role='alert')
+                                                                        div.d-flex
+                                                                            span.mr-1
+                                                                                i.fas.fa-exclamation-triangle
+                                                                            span
+                                                                                span.text-weight-bold Обратите внимание! 
+                                                                                | После прохождения верификации Вы не сможете изменить фамилию, имя и дату рождения.
+
+
+
+                                            p Фото документов и селфи с документом для верификации
+                                            .veref-doc-list.d-flex.mb-4
+                                                a.veref-doc-item(href="")
+                                                    
+                                                a.veref-doc-item(href="")
+                                                    
+                                                a.veref-doc-item(href="")
+                                                    
+                                            div.text-center
+                                                button.btn.btn-lg.btn-primary(type='submit' data-toggle="modal" data-target="#exampleModalCenter")
+                                                    i.far.fa-file-upload.mr-2
+                                                    span Загрузить фото
+                            .col-12.col-xl-8.mb-4
+                                .panel
+                                    .row.mb-4
+                                        .col-12.col-md-6.mb-2
+                                            label(for='exampleLogin') Логин *
+                                            .input-group.mb-3
+                                                input#exampleLogin.form-control(type='text')
+                                        .col-12.col-md-6.mb-2
+                                            label(for='examplePassword') Пароль *
+                                            .input-group.mb-3
+                                              input#password.form-control.form-control-right(type='password', placeholder='Password')
+                                              .input-group-append
+                                                button.btn.btn-primary.js-show-password(href='#password')
+                                                  i.fa.fa-eye-slash
+                                                button.btn.btn-secondary(data-toggle="modal" data-target="#exampleModalPassword")
+                                                  i.fa.fa-pen
+                                        .col-12.col-md-6.mb-2
+                                            label(for='exampleEmail') E-mail
+                                            .input-group.mb-3
+                                                input#exampleEmail.form-control(type='email')
+                                        .col-12.col-md-6.mb-2
+                                            label(for='examplePhone') Номер телефона
+                                            .input-group.mb-3
+                                                input#examplePhone.form-control(type='text')
+                                    .row.mb-4
+                                        .col-12.col-md-6.mb-3
+                                            label(for='exampleSurname') Фамилия *
+                                            .input-group.mb-3
+                                                input#exampleSurname.form-control(type='text')
+                                        .col-12.col-md-6.mb-3
+                                            label(for='exampleName') Имя *
+                                            .input-group.mb-3
+                                                input#exampleName.form-control(type='text')
+                                        .col-12.col-md-6.mb-3
+                                            label(for='exampleDate') Дата рождения
+                                            .input-group.mb-4
+                                                input.js-calendar.form-control.date(type='text')
+                                                .input-group-append
+                                                    button.js-toggle-calendar.btn.btn-secondary(type='button') 
+                                                        i.far.fa-calendar-alt
+                                    .row.mb-4
+                                        .col-12.col-md-6.mb-3
+                                            label(for='exampleSurname') Telegram
+                                            .input-group.mb-3
+                                                input#exampleTelegram.form-control(type='text')
+                                        .col-12.col-md-6.mb-3
+                                            label(for='exampleFacebook') Профиль Facebook
+                                            .input-group.mb-3
+                                                input#exampleFacebook.form-control(type='text')
+                                        .col-12.col-md-6.mb-3
+                                            label(for='exampleVKontacte') Профиль VKontacte
+                                            .input-group.mb-4
+                                                input#exampleVKontacte.form-control(type='text')
+                                    .row
+                                        .col-12.mb-4
+                                            .custom-control.custom-checkbox
+                                                input#customCheck1.custom-control-input(type='checkbox', checked='')
+                                                label.custom-control-label.txt-rg(for='customCheck1') Включить двухфакторную аутентификацию для финансовых операций
+                                        .col-12
+                                            button.btn.btn-lg.btn-primary(type='submit')
+                                                span Сохранить
+                #exampleModalCenter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+                    .modal-dialog.modal-dialog-mid.modal-dialog-centered(role='document')
+                        .modal-content
+                            .modal-content
+                              .modal-close
+                                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                  span(aria-hidden='true') 
+                                    i.fal.fa-times
+                              .modal-body.pb-0
+                                .row
+                                    .col-12.mb-2
+                                        div.d-flex.align-items-center
+                                            i.far.fa-id-card-alt.h1.text-secondary.mr-2
+                                            h3.mb-0 Изменение фотографии
+                                    .col-12.mb-2
+                                        p Выбраная область будет отображаться как фотография Вашего профиля
+                              .modal-footer.justify-content-start
+                                button.btn.btn-secondary(type='button', data-dismiss='modal') Загрузить новое
+                                button.btn.btn-primary(type='button') Сохранить
+                                button.btn.btn-outline-primary(type='button') Отменить
+
+                #exampleModalPassword.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+                    .modal-dialog.modal-dialog-mid.modal-dialog-centered(role='document')
+                        .modal-content
+                            .modal-content
+                              .modal-close
+                                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                  span(aria-hidden='true') 
+                                    i.fal.fa-times
+
+                              .modal-body.pb-0
+                                .row
+                                    .col-12.mb-2
+                                        div.d-flex.align-items-center
+                                            i.far.fa-key.h1.text-secondary.mr-2
+                                            h3.mb-0 Изменение пароля
+                                    .col-12.mb-2
+                                        p Поля отмеченные * обязательны к заполнению
+                                    .col-12
+                                      label Введите Ваш текущий пароль *
+                                      .input-group.mb-4
+                                        input#password.form-control.form-control-right(type='password', placeholder='Password')
+                                        .input-group-append
+                                          button.btn.btn-primary.js-show-password(href='#password')
+                                            i.fa.fa-eye-slash
+                                          button.btn.btn-secondary(data-toggle="modal" data-target="#exampleModalPassword")
+                                            i.fa.fa-pen
+                                    .col-12
+                                      label Введите Ваш текущий пароль *
+                                      .input-group.mb-4
+                                        input#password.form-control.form-control-right(type='password', placeholder='Password')
+                                        .input-group-append
+                                          button.btn.btn-primary.js-show-password(href='#password')
+                                            i.fa.fa-eye-slash
+                                          button.btn.btn-secondary(data-toggle="modal" data-target="#exampleModalPassword")
+                                            i.fa.fa-pen
+                                    .col-12
+                                      label Введите Ваш текущий пароль *
+                                      .input-group.mb-4
+                                        input#password.form-control.form-control-right(type='password', placeholder='Password')
+                                        .input-group-append
+                                          button.btn.btn-primary.js-show-password(href='#password')
+                                            i.fa.fa-eye-slash
+                                          button.btn.btn-secondary(data-toggle="modal" data-target="#exampleModalPassword")
+                                            i.fa.fa-pen
+                              .modal-footer.pt-0.justify-content-start
+                                button.btn.btn-lg.btn-primary(type='button') Изменить
+                                button.btn.btn-lg.btn-outline-primary(type='button') Отменить           
+            include  components/footer.pug             
+        script(src="js/jquery-3.3.1.js")
+        script(src="plugins/bootstrap/bootstrap.bundle.min.js")
+        script(src="plugins/bootstrap-datepicker/bootstrap-datepicker.min.js")
+        script(src="plugins/slick-1.8.1/slick.min.js")
+        script(src="plugins/echarts/echarts.min.js")
+        script(src="plugins/select2/select2.min.js")
+        script.
+            $(function(){
+                var datepicker_shown = false;
+                $('.js-toggle-calendar').on('click', function(e){
+                    if(datepicker_shown) {
+                        $('.js-calendar').datepicker( "hide" );
+                    } else {
+                        $('.js-calendar').datepicker( "show" );
+                    }
+                    datepicker_shown = !datepicker_shown;
+                    return false;
+                });
+            })
+        script(src="js/scripts.min.js")
