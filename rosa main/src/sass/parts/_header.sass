@@ -1,0 +1,167 @@
+.header
+    width: 100%
+    z-index: 100
+    position: absolute
+    padding: 10px 0px
+
+.header-costom
+    position: absolute
+    left: 0px
+    right: 0px
+    top: 0px
+    background-color: transparent
+
+.logo
+    width: 130px
+    height: 40px
+    font-size: 0px
+    
+.logo-dark
+    display: none
+
+.header-wrapper
+    display: flex
+    justify-content: space-between
+    position: relative
+
+.header-box
+    width: 100%
+
+.header-nav-mobile
+    opacity: 0
+    transition: 1s
+    width: 100%
+    height: 100%
+    position: fixed
+    background-color: white
+    left: 0px
+    right: 0px
+    top: -100%
+    bottom: 0px
+    z-index: 99
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.nav-mobile
+    display: flex
+    overflow: auto
+
+.header-nav-mobile--open
+    top: 0px
+    opacity: 1
+
+.nav-mobile-list
+    width: 100%
+    display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-box-pack: start
+    -ms-flex-pack: start
+    justify-content: start
+    height: 100%
+    overflow-y: auto
+
+.nav-mobile-list li
+    text-align: center
+
+.nav-mobile-list a:not(.drop-btn):not(.drop-el)
+    text-align: center
+    font-size: 18px
+    padding: 10px 10px
+    color: $dark-color
+    &:hover
+        background-color: $primary-color
+
+.header-nav
+    display: none
+    &-list li > a.active
+        color: #2ebff5!important
+
+.social-list-mobile-nav
+    padding: 10px 0px
+
+@media(min-width: 992px)
+    .header-nav
+        display: block
+    .header
+        padding: 20px 0px
+    .header-top
+        display: flex
+        justify-content: flex-end
+        width: 100%
+    .header-nav-list
+        display: flex
+        height: 70px
+        display: inline-flex
+        flex-direction: column
+        flex-wrap: wrap
+    .header-nav-list>* 
+        flex: 1 1 30px
+    .header-nav-list li
+        margin-right: 5px
+        &:last-child
+          margin-right: 0px
+    .header-nav-list li > a.active
+        color: #2ebff5
+        font-weight: 600
+    .header-nav-list a:not(.drop-btn):not(.drop-el)
+        position: relative
+        line-height: 1
+        padding: 8px 10px 7px
+        color: $dark-color
+        letter-spacing: 1px
+        font-weight: 500
+        &:hover
+            color: #2ebff5!important
+        .header-user-register
+            color: #ffce02
+            &:hover
+                color: #f23d3d
+    .header-nav-mobile
+        display: none
+@media(min-width: 1200px)
+    .header-nav-list li
+        margin-right: 15px
+
+
+.dropdown 
+    position: relative
+    display: inline-block
+
+.dropdown-content 
+    display: none
+    position: absolute
+    width: 50px
+    bottom: -60px
+
+.drop-btn
+    width: 50px
+    height: 50px
+    text-align: center
+    background-color: #f1f1f1
+    color: #2ebff5
+    line-height: 50px
+    border-radius: 50%
+    font-weight: 700
+    cursor: pointer
+
+.dropdown a 
+    width: 50px
+    height: 50px
+    text-align: center
+    background-color: #f1f1f1
+    color: #2ebff5
+    line-height: 50px
+    border-radius: 50%
+    font-weight: 700
+    padding: 0px
+    border: 1px solid #f1f1f1
+    &:before
+      display: none
+
+.dropdown a:hover 
+    background-color: #f1f1f1
+    border: 1px solid #2ebff5!important

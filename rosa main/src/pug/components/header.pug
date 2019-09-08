@@ -1,0 +1,76 @@
+header#header.header.px-xl-20.wow.fadeInDown(data-wow-delay="" data-wow-offset="200")
+    .container-fluid
+        .header-wrapper
+            .header-logo-box.mr-lg-50
+                a.logo(href="")
+                    img.logo-light(src='../img/Logo.png', alt="logo")
+                    img.logo-dark(src="../img/Logo-dark.png", alt="logo")
+            .header-box
+                .hamburger.hamburger--spin.js-hamburger
+                    .hamburger-box
+                        .hamburger-inner
+                nav.header-nav.pl-lg-50
+                    ul.header-nav-list
+                        li
+                            a(href="#proj") О проекте
+                        li
+                            a(href="#make") Преимущества
+                        li
+                            a(href="#busines") Бизнес
+                        li
+                            a(href="#plans") Пакеты и цены
+                        li
+                            ul.header-nav-list.header-nav-list-controls     
+                                li
+                                    a(href="") Вход
+                                li
+                                    a(href="") Регистрация
+                        li.d-flex.align-items-center
+                            .dropdown
+                                a.drop-btn.js-dropbtn(href="#") RU 
+                                .dropdown-content.js-drop-content
+                                    a.drop-el(href="#") EN
+
+            .header-nav-mobile
+                .menu-controls.py-10.d-flex.align-items-center.justify-content-center
+                    .dropdown.mx-20
+                        a.drop-btn.js-dropbtn(href="#") RU 
+                        .dropdown-content.js-drop-content
+                            a.drop-el(href="#") EN
+                    label.theme-box.mx-20
+                        input.js-check-theme(type="checkbox")
+                        span.theme-checkmark
+                nav.nav-mobile
+                    ul.nav-mobile-list
+                        li
+                            a.log(href="") Вход
+                        li
+                            a.log(href="") Регистрация
+                        li
+                            a(href="#proj") О проекте
+                        li
+                            a(href="#busines") Бизнес
+                        li
+                            a(href="#make") Преимущества
+                        li
+                            a(href="#plans") Пакеты и цены
+                ul.social-list.social-list-mobile-nav
+                    li
+                        a(href="/")
+                            i.fab.fa-vk
+                    li
+                        a(href="/") 
+                            i.fab.fa-facebook
+                    li
+                        a(href="/") 
+                            i.fab.fa-twitter
+                    li
+                        a(href="/") 
+                            i.fab.fa-instagram
+                    li
+                        a(href="/") 
+                            i.fab.fa-youtube
+                    li
+                        a(href="/") 
+                            i.fab.fa-linkedin-in
+                                

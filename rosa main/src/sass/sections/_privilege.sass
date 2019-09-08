@@ -1,0 +1,27 @@
+.privilege
+    .title
+      color: #212121
+.privilege-decoration-col
+  height: 100%
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    display: block
+    height: 100%
+    position: absolute
+    top: 0px
+    right: 0px
+    width: 1000px
+    background-color: #fef234
+    z-index: -1
+@media(min-width: 992px)
+  .privilege-decoration-col
+    padding-top: 100px!important
+@media(min-width: 1200px)
+  .privilege-decoration-col
+    padding-bottom: 300px
+    &:before
+      background-repeat: no-repeat
+      background-position: right bottom -50px
+      background-image: url('../img/privilege-bg.png')

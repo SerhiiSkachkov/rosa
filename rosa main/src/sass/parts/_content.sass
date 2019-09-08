@@ -1,0 +1,160 @@
+@import "../helpers/mixins"
+@import "../helpers/variables"
+
+html 
+  -webkit-box-sizing: border-box
+          box-sizing: border-box
+  -ms-overflow-style: scrollbar
+
+*, ::after, ::before 
+  -webkit-box-sizing: inherit
+          box-sizing: inherit
+
+body
+    display: block
+    width: 100%
+    height: 100%
+    background-color: #fff
+
+.body-menu-open
+  overflow: hidden
+
+.main-wrapper
+  padding: 0 0 0 0
+  width: 100%
+  position: relative
+  overflow: hidden
+  min-height: 100%
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+
+.content 
+  text-align: left
+  width: 100%
+  order: 2
+  flex-grow: 1
+  flex: 1 0 auto
+
+.section
+  position: relative
+  padding: 60px 0px
+  &-dark
+    background-color: #242323
+  &-gray
+    background-color: #f9f9f9
+
+.section-wrap
+  max-width: 1920px
+  margin: 0 auto
+  height: 100%
+
+.btn-standart
+  background-color: #2ebff5
+  color: white
+  padding: 12px 25px
+  font-weight: 600
+  &:hover
+    background-color: #f74364
+
+.btn-decoration
+    background: url('../img/btn.png') 0% 0% no-repeat/auto
+    width: 285px
+    height: 85px
+    padding-left: 30px
+    padding-right: 40px
+    text-align: center
+    color: white
+    position: relative
+    display: table
+    span
+      display: table-cell
+      font-weight: 600
+      vertical-align: middle
+    &:before
+      content: ''
+      z-index: -1
+      display: block
+      position: absolute
+      top: -15%
+      left: 0px
+      width: 120%
+      height: 160%
+      transition: 0.7s
+      background: url('../img/btn-shadow-dark.png') 0% 0% no-repeat/auto
+    &:hover
+      &:before
+        opacity: 0
+        
+.btn-decoration-costom-shadow:before
+      background: url('../img/btn-shadow-costom.png') 0% 0% no-repeat/auto
+
+.scroll
+    display: none
+    width: 45px
+    height: 45px
+    position: fixed
+    right: 10px
+    bottom: 10px
+    z-index: 12
+    background-color: $primary-color
+    border-radius: 3px
+    span
+      width: 45px
+      height: 45px
+      display: block
+      position: relative
+      &:before
+        content: ""
+        display: block
+        position: absolute
+        width: 10px
+        position
+        height: 10px
+        top: 20px
+        left: 17px
+        transform: rotate(-135deg)
+        border-right: 2px solid #000
+        border-bottom: 2px solid #000
+
+.scroll:hover
+    background-color: $secondary-color
+
+
+.page-loader 
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: $dark-color
+    z-index: 99999
+
+.page-laoder-frame 
+    display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    height: 100vh
+
+.svg-loader 
+    width: 110px
+    -webkit-animation: svg-loader 1s linear infinite
+    animation: svg-loader 1s linear infinite
+
+ 
+@-webkit-keyframes svg-loader 
+    from 
+        -webkit-transform: rotate(0)
+        transform: rotate(0)
+    
+    to 
+        -webkit-transform: rotate(360deg)
+        transform: rotate(360deg)

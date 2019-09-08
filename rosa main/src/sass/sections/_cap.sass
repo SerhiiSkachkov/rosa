@@ -1,0 +1,88 @@
+.cap
+  background: url('../img/symbol.jpg')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 125px 0px 100px
+.cap-aside
+    display: none
+.cap-img
+    position: absolute
+    bottom: 0px
+    z-index: 9
+    font-size: 0px
+    width: 100%
+    left: 0px
+    right: 0px
+    img
+      font-size: 0px
+.cap-box
+    position: relative
+    width: 100%
+.cap-content
+    position: relative
+    z-index: 10
+@media(min-width:992px)
+  .cap-aside
+    display
+    position: absolute
+    top: 0px
+    bottom: 0px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding-left: 35px
+    .social-list 
+        flex-grow: 1
+        li
+            margin-bottom: 10px
+            text-align: center
+
+.theme-box
+  display: block
+  position: relative
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  width: 40px
+  z-index: 99
+  margin: 0 auto
+  input 
+    position: absolute
+    opacity: 0
+    cursor: pointer
+    height: 0
+    width: 0
+
+.theme-checkmark
+    position: relative
+    width: 40px
+    height: 21px
+    margin: 0 auto
+    display: block
+    background: url('../img/checkerlight.png') center center no-repeat/auto
+    &:before
+      position: absolute
+      content: ''
+      display: block
+      width: 14px
+      height: 14px
+      background-color: white
+      border-radius: 50%
+      top: 4px
+      bottom: 2px
+      right: 3px
+
+.theme-box input:checked ~ .theme-checkmark
+  background: url('../img/checkernight.png') center center no-repeat/auto
+
+.theme-box input:checked ~ .theme-checkmark:before
+  left: 3px
+
+.cap-content-btn
+    font-weight: 600
+    color: #2ebff5
+    &:hover
+      color: #f5647f

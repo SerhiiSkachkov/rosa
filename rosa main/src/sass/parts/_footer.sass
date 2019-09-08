@@ -1,0 +1,50 @@
+.footer
+    padding: 15px 0px
+    order: 3
+    flex: 0 0 auto
+    background-color: white
+    position: relative
+    z-index: 10
+
+.foo-logo-dark
+    display: none
+.foo
+    &-logo
+        width: 200px
+        height: 60px
+    &-list
+        text-align: center
+        padding: 10px 0px
+        a
+            padding: 5px 0px
+            color: $black-color
+            &:hover
+                color: $secondary-color
+
+@media(min-width: 768px)
+    .foo-list
+        padding: 5px 0px
+        a
+            font-size: 16px
+@media(min-width: 992px)
+    .foo-list
+        text-align: right
+
+.social-list
+    display: flex
+    justify-content: center
+    flex-flow: wrap
+    li 
+        margin: 10px 10px
+    a
+        padding: 0px 5px
+        i
+            color: $black-color
+            transition: 0.3s
+            font-size: 17px
+        &:hover
+            i
+                color: $secondary-color
+
+
+
